@@ -1,6 +1,6 @@
 #****************************************************************
 # caps quiz - d.e.Howe kingston ont. 2017 October
-# quiz logit when finished may offer mult. lists to quiz with
+# quiz logic when finished may offer mult. lists to quiz with
 #****************************************************************
 
 from tkinter import *
