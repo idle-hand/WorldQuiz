@@ -1,10 +1,7 @@
 #****************************************************************
 # caps quiz - d.e.Howe kingston ont. 2017 October
-# quiz logit when finished may offer mult. lists to quiz with
 #****************************************************************
-
 from tkinter import *
-
 import random
 import copy
 
@@ -16,7 +13,6 @@ cap=["Washington D.C.","Montgomery","Juneau","Phoenix","Little Rock","Sacramento
 "Pierre","Nashville","Austin","Salt Lake City","Montpelier","Richmond","Olympia","Charleston",
 "Madison","Cheyenne"]
 
-
 states=["United States","Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware",
 "Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky",
 "Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri",
@@ -25,23 +21,16 @@ states=["United States","Alabama","Alaska","Arizona","Arkansas","California","Co
 "South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia",
 "Wisconsin","Wyoming"]
 
-
-
 short_list = [' ',' ',' ',' ',' ']
-
 score = 0
 count = 0
-
-
 new_list = copy.copy(cap)
-
 
 #****************************************************************
 # caps quiz - d.e.Howe kingston ont. 2017 October
 # function ShowChoice
 # START
 #****************************************************************
-
 def ShowChoice():
     global count
     global score
@@ -58,8 +47,7 @@ def ShowChoice():
 # function ShowChoice
 # END
 #****************************************************************
-
-    
+   
 while count < 51:
 
 #****************************************************************
@@ -72,16 +60,13 @@ while count < 51:
 #****************************************************************
     random.shuffle(new_list)
    
-
     for i in range(5):
         short_list[i] = new_list[i]
     
     for i in range(5):
         if short_list[i] == cap[count]:
             short_list[i] = new_list[5]
-   
-                                
-    
+       
     from random import randint
     r = randint(0, 4)
 
@@ -98,31 +83,19 @@ while count < 51:
       
         b = Radiobutton(root, text =short_list[i], variable=v,command=ShowChoice, value=short_list[i],font=22,indicatoron=0)
         b.grid(row= i+4,column=2, sticky=W)
-   
-   
+      
     gif_one = Text(root,height=10, width=35)
     photo=PhotoImage(file='./download.png')
     gif_one.image_create(END, image=photo)
     gif_one.grid(row=9,column=0)
    
-    
-   
-   
-   
-    
- 
-
     Label(root,text='   Score = '+ str(score),font=18).grid(row=10,column=0,sticky=W)
-
     Label(root,text=' You have: ' + str(score) + ' of ' + str(count) + ' correct.').grid(row=11,column=0)
 
     if count > 0:
         Label(root,text=' or: ' + str(int(100 * score/count)) + ' Percent').grid(row=11,column=1,sticky=W)
-
-
     done = Button(root,text =' QUIT  ',command=quit).grid(row=10,column=2) 
 
-   
     root.bind('<Return>',ShowChoice)
 
     mainloop()
