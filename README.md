@@ -12,8 +12,6 @@ Needs some user score save and resume quiz option. Actually I'm shooting for a r
 
 ![image](https://user-images.githubusercontent.com/33843929/120259633-55fa9080-c262-11eb-93d2-0a4112406133.png)
 
-May 2020 - re-write begins.
-added suggestions as py files fix and fix1
 
 
 
