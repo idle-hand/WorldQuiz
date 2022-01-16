@@ -13,5 +13,7 @@ Needs some user score save and resume quiz option. Actually I'm shooting for a r
 ![image](https://user-images.githubusercontent.com/33843929/120259633-55fa9080-c262-11eb-93d2-0a4112406133.png)
 
 
+New Year 2022 - Project update and near completed.
+Have Django quize running on pythonanywhere that will accomodate my requirements above. Just realized I could connect the 2 repos to and complete my intention for WorldQuiz and make use of exisiting django site.
 
 
