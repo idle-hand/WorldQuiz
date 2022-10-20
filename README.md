@@ -1,5 +1,6 @@
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/python/black)
 
+returning to this project as I complete is in JavaScript while working on Speakeasy. Oct. 20 2022
 This is my first Python project. Never time to finish. Wanted to have 3 versions - 
 
 Canadian capitals, 
